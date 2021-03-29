@@ -1,11 +1,11 @@
 from tornado.web import RequestHandler, Application
 import tornado
 import uuid
-from main import *
+from tennis_match import *
 import json
 
 game_dict = {}
-a = Match()
+
 
 
 class MatchHandler(RequestHandler):

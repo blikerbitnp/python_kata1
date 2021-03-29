@@ -1,6 +1,4 @@
-import pytest
-
-from main import *
+from tennis_match import *
 
 
 def test_for_deuce():
