@@ -1,0 +1,10 @@
+Name                       Stmts   Miss  Cover
+----------------------------------------------
+server.py                     28      8    71%
+tennis_match\__init__.py       1      0   100%
+tennis_match\main.py          74      6    92%
+tests\test_1.py               36      0   100%
+tests\test_for_api.py          8      0   100%
+----------------------------------------------
+TOTAL                        147     14    90%
+Coverage failure: total of 90 is less than fail-under=94

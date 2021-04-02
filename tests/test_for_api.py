@@ -1,5 +1,5 @@
 from tornado.testing import AsyncHTTPTestCase
-from server import make_app
+from  server import make_app
 
 class HTTPTest(AsyncHTTPTestCase):
     def get_app(self):

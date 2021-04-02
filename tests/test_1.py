@@ -8,7 +8,6 @@ def test_for_deuce():
     a.increment_for_team("b")
     a.increment_for_team("a")
     a.increment_for_team("b")
-
     a.increment_for_team("a")
     a.increment_for_team("b")
     assert a.get_score() == {"a": "deuce", "b": "deuce"}

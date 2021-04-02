@@ -1,1 +1,1 @@
-from tennis_match.main import *
+from tennis_match.tennis import *

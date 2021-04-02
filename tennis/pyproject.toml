@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "kata1"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/tennis"
+license = "BSD license"
+author = 'Vis'
+author_email = "psviswanatha@gmail.com"
+
+[tool.briefcase.app.tennis]
+formal_name = "tennis_app"
+description = "tennis scoring app"
+icon = "src/tennis/resources/tennis"
+sources = ['src/tennis']
+requires = []
+
+
+[tool.briefcase.app.tennis.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.tennis.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.tennis.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.tennis.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.tennis.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
